@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ad1939_dac_dbclk",
+					"strict" : false
+				},
+				{
+					"name" : "ad1939_dac_dlrclk",
+					"strict" : false
+				},
+				{
+					"name" : "ad1939_dac_dsdata1",
+					"strict" : false
+				},
+				{
+					"name" : "audio_mini_leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "audio_mini_leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "audio_mini_leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "audio_mini_leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "key[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fpga_clk1_50",
+					"strict" : false
+				},
+				{
+					"name" : "ad1939_adc_alrclk",
+					"strict" : false
+				},
+				{
+					"name" : "key[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ad1939_adc_abclk",
+					"strict" : false
+				},
+				{
+					"name" : "ad1939_adc_asdata2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,23 @@
+
+State Machine - |de10nano_audiomini_system|soc_system_passthrough:u0|soc_system_passthrough_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:audio_mini_leds_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |de10nano_audiomini_system|soc_system_passthrough:u0|soc_system_passthrough_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:system_id_control_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |de10nano_audiomini_system|soc_system_passthrough:u0|soc_system_passthrough_ad1939_subsystem:ad1939_subsystem|ad1939_hps_audio_mini:ad1939_audio_mini|state
+Name state.state_right_valid state.state_right_capture state.state_right_wait state.state_left_valid state.state_left_capture state.state_left_wait 
+state.state_left_wait 0 0 0 0 0 0 
+state.state_left_capture 0 0 0 0 1 1 
+state.state_left_valid 0 0 0 1 0 1 
+state.state_right_wait 0 0 1 0 0 1 
+state.state_right_capture 0 1 0 0 0 1 
+state.state_right_valid 1 0 0 0 0 1 

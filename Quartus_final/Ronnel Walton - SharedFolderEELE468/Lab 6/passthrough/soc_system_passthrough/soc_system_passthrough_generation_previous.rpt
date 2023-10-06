@@ -1,0 +1,85 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\ronne\OneDrive - Montana State University\MSU-Bozeman\Classes\Spring 2022\EELE 468\Labs\Lab 4\passthrough\soc_system_passthrough.qsys" --synthesis=VHDL --output-directory="C:\Users\ronne\OneDrive - Montana State University\MSU-Bozeman\Classes\Spring 2022\EELE 468\Labs\Lab 4\passthrough\soc_system_passthrough\synthesis" --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading passthrough/soc_system_passthrough.qsys
+Progress: Reading input file
+Progress: Adding ad1939_subsystem [ad1939_subsystem 1.0]
+Progress: Reading input file
+Progress: Adding AD1939_ABCLK [altera_clock_bridge 21.1]
+Progress: Parameterizing module AD1939_ABCLK
+Progress: Adding AD1939_ALRCLK [altera_clock_bridge 21.1]
+Progress: Parameterizing module AD1939_ALRCLK
+Progress: Adding AD1939_Audio_Mini [AD1939_Audio_Mini 1.0]
+Progress: Parameterizing module AD1939_Audio_Mini
+Progress: Adding Reset [altera_reset_bridge 21.1]
+Progress: Parameterizing module Reset
+Progress: Adding System_Clock [altera_clock_bridge 21.1]
+Progress: Parameterizing module System_Clock
+Progress: Adding sys_clk_from_AD1939_MCLK_pll [altera_pll 21.1]
+Progress: Parameterizing module sys_clk_from_AD1939_MCLK_pll
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module ad1939_subsystem
+Progress: Adding clk_reset_inputs [clk_reset_subsystem 1.0]
+Progress: Reading input file
+Progress: Adding fabric_reset_bridge [altera_reset_bridge 21.1]
+Progress: Parameterizing module fabric_reset_bridge
+Progress: Adding hps_and_fabric_reset_bridge [altera_reset_bridge 21.1]
+Progress: Parameterizing module hps_and_fabric_reset_bridge
+Progress: Adding hps_clk_bridge [altera_clock_bridge 21.1]
+Progress: Parameterizing module hps_clk_bridge
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module clk_reset_inputs
+Progress: Adding hps [altera_hps 21.1]
+Progress: Parameterizing module hps
+Progress: Adding system_id [altera_avalon_sysid_qsys 21.1]
+Progress: Parameterizing module system_id
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system_passthrough.ad1939_subsystem.sys_clk_from_AD1939_MCLK_pll: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: soc_system_passthrough.ad1939_subsystem.sys_clk_from_AD1939_MCLK_pll: Able to implement PLL with user settings
+Info: soc_system_passthrough.hps: HPS Main PLL counter settings: n = 0  m = 63
+Info: soc_system_passthrough.hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: soc_system_passthrough.system_id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system_passthrough.system_id: Time stamp will be automatically updated when this component is generated.
+Info: soc_system_passthrough: Generating soc_system_passthrough "soc_system_passthrough" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master hps.h2f_lw_axi_master and slave system_id.control_slave because the master is of type axi and the slave is of type avalon.
+Info: ad1939_subsystem: "soc_system_passthrough" instantiated ad1939_subsystem "ad1939_subsystem"
+Info: clk_reset_inputs: "soc_system_passthrough" instantiated clk_reset_subsystem "clk_reset_inputs"
+Info: hps: "Running  for module: hps"
+Info: hps: HPS Main PLL counter settings: n = 0  m = 63
+Info: hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: hps: "soc_system_passthrough" instantiated altera_hps "hps"
+Info: system_id: "soc_system_passthrough" instantiated altera_avalon_sysid_qsys "system_id"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "soc_system_passthrough" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "soc_system_passthrough" instantiated altera_reset_controller "rst_controller"
+Info: AD1939_Audio_Mini: "ad1939_subsystem" instantiated AD1939_Audio_Mini "AD1939_Audio_Mini"
+Info: sys_clk_from_AD1939_MCLK_pll: "ad1939_subsystem" instantiated altera_pll "sys_clk_from_AD1939_MCLK_pll"
+Info: fpga_interfaces: "hps" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps" instantiated altera_hps_io "hps_io"
+Info: system_id_control_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "system_id_control_slave_translator"
+Info: hps_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_h2f_lw_axi_master_agent"
+Info: system_id_control_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "system_id_control_slave_agent"
+Info: system_id_control_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "system_id_control_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: system_id_control_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "system_id_control_slave_burst_adapter"
+Info: Reusing file C:/Users/ronne/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Labs/Lab 4/passthrough/soc_system_passthrough/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/ronne/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Labs/Lab 4/passthrough/soc_system_passthrough/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: soc_system_passthrough: Done "soc_system_passthrough" with 25 modules, 83 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

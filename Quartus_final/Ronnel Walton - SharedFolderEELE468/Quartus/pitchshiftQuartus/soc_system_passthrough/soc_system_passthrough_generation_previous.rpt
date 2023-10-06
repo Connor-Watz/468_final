@@ -1,0 +1,167 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Ronnel\OneDrive - Montana State University\MSU-Bozeman\Classes\Spring 2022\EELE 468\Final_Proj\pitchshiftQuartus\soc_system_passthrough.qsys" --block-symbol-file --output-directory="C:\Users\Ronnel\OneDrive - Montana State University\MSU-Bozeman\Classes\Spring 2022\EELE 468\Final_Proj\pitchshiftQuartus\soc_system_passthrough" --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading pitchshiftQuartus/soc_system_passthrough.qsys
+Progress: Reading input file
+Progress: Adding Pitch_Shift_0 [Pitch_Shift 1.0]
+Progress: Parameterizing module Pitch_Shift_0
+Progress: Adding ad1939_subsystem [ad1939_subsystem 1.0]
+Progress: Reading input file
+Progress: Adding AD1939_ABCLK [altera_clock_bridge 21.1]
+Progress: Parameterizing module AD1939_ABCLK
+Progress: Adding AD1939_ALRCLK [altera_clock_bridge 21.1]
+Progress: Parameterizing module AD1939_ALRCLK
+Progress: Adding ad1939_audio_mini [ad1939_audio_mini 1.0]
+Progress: Parameterizing module ad1939_audio_mini
+Progress: Adding reset [altera_reset_bridge 21.1]
+Progress: Parameterizing module reset
+Progress: Adding sys_clk_from_AD1939_MCLK_pll [altera_pll 21.1]
+Progress: Parameterizing module sys_clk_from_AD1939_MCLK_pll
+Progress: Adding system_clock [altera_clock_bridge 21.1]
+Progress: Parameterizing module system_clock
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module ad1939_subsystem
+Progress: Adding audio_mini_leds [altera_avalon_pio 21.1]
+Progress: Parameterizing module audio_mini_leds
+Progress: Adding clk_reset_inputs [clk_reset_subsystem 1.0]
+Progress: Reading input file
+Progress: Adding fabric_reset_bridge [altera_reset_bridge 21.1]
+Progress: Parameterizing module fabric_reset_bridge
+Progress: Adding hps_and_fabric_reset_bridge [altera_reset_bridge 21.1]
+Progress: Parameterizing module hps_and_fabric_reset_bridge
+Progress: Adding hps_clk_bridge [altera_clock_bridge 21.1]
+Progress: Parameterizing module hps_clk_bridge
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module clk_reset_inputs
+Progress: Adding de10_leds [altera_avalon_pio 21.1]
+Progress: Parameterizing module de10_leds
+Progress: Adding hps [altera_hps 21.1]
+Progress: Parameterizing module hps
+Progress: Adding jtag_master [altera_jtag_avalon_master 21.1]
+Progress: Parameterizing module jtag_master
+Progress: Adding system_id [altera_avalon_sysid_qsys 21.1]
+Progress: Parameterizing module system_id
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system_passthrough.ad1939_subsystem.sys_clk_from_AD1939_MCLK_pll: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: soc_system_passthrough.ad1939_subsystem.sys_clk_from_AD1939_MCLK_pll: Able to implement PLL with user settings
+Info: soc_system_passthrough.hps: HPS Main PLL counter settings: n = 0  m = 63
+Info: soc_system_passthrough.hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: soc_system_passthrough.system_id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system_passthrough.system_id: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Ronnel\OneDrive - Montana State University\MSU-Bozeman\Classes\Spring 2022\EELE 468\Final_Proj\pitchshiftQuartus\soc_system_passthrough.qsys" --synthesis=VHDL --output-directory="C:\Users\Ronnel\OneDrive - Montana State University\MSU-Bozeman\Classes\Spring 2022\EELE 468\Final_Proj\pitchshiftQuartus\soc_system_passthrough\synthesis" --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading pitchshiftQuartus/soc_system_passthrough.qsys
+Progress: Reading input file
+Progress: Adding Pitch_Shift_0 [Pitch_Shift 1.0]
+Progress: Parameterizing module Pitch_Shift_0
+Progress: Adding ad1939_subsystem [ad1939_subsystem 1.0]
+Progress: Parameterizing module ad1939_subsystem
+Progress: Adding audio_mini_leds [altera_avalon_pio 21.1]
+Progress: Parameterizing module audio_mini_leds
+Progress: Adding clk_reset_inputs [clk_reset_subsystem 1.0]
+Progress: Parameterizing module clk_reset_inputs
+Progress: Adding de10_leds [altera_avalon_pio 21.1]
+Progress: Parameterizing module de10_leds
+Progress: Adding hps [altera_hps 21.1]
+Progress: Parameterizing module hps
+Progress: Adding jtag_master [altera_jtag_avalon_master 21.1]
+Progress: Parameterizing module jtag_master
+Progress: Adding system_id [altera_avalon_sysid_qsys 21.1]
+Progress: Parameterizing module system_id
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system_passthrough.ad1939_subsystem.sys_clk_from_AD1939_MCLK_pll: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: soc_system_passthrough.ad1939_subsystem.sys_clk_from_AD1939_MCLK_pll: Able to implement PLL with user settings
+Info: soc_system_passthrough.hps: HPS Main PLL counter settings: n = 0  m = 63
+Info: soc_system_passthrough.hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: soc_system_passthrough.system_id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system_passthrough.system_id: Time stamp will be automatically updated when this component is generated.
+Info: soc_system_passthrough: Generating soc_system_passthrough "soc_system_passthrough" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src0 and cmd_mux.sink1
+Info: Inserting clock-crossing logic between cmd_demux_002.src0 and cmd_mux.sink2
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux.src1 and rsp_mux_001.sink0
+Info: Inserting clock-crossing logic between rsp_demux.src2 and rsp_mux_002.sink0
+Info: Pitch_Shift_0: "soc_system_passthrough" instantiated Pitch_Shift "Pitch_Shift_0"
+Info: ad1939_subsystem: "soc_system_passthrough" instantiated ad1939_subsystem "ad1939_subsystem"
+Info: audio_mini_leds: Starting RTL generation for module 'soc_system_passthrough_audio_mini_leds'
+Info: audio_mini_leds:   Generation command is [exec C:/intelfpga_lite/21.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/21.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_passthrough_audio_mini_leds --dir=C:/Users/Ronnel/AppData/Local/Temp/alt9118_4998068242442232298.dir/0004_audio_mini_leds_gen/ --quartus_dir=C:/intelfpga_lite/21.1/quartus --verilog --config=C:/Users/Ronnel/AppData/Local/Temp/alt9118_4998068242442232298.dir/0004_audio_mini_leds_gen//soc_system_passthrough_audio_mini_leds_component_configuration.pl  --do_build_sim=0  ]
+Info: audio_mini_leds: Done RTL generation for module 'soc_system_passthrough_audio_mini_leds'
+Info: audio_mini_leds: "soc_system_passthrough" instantiated altera_avalon_pio "audio_mini_leds"
+Info: clk_reset_inputs: "soc_system_passthrough" instantiated clk_reset_subsystem "clk_reset_inputs"
+Info: hps: "Running  for module: hps"
+Info: hps: HPS Main PLL counter settings: n = 0  m = 63
+Info: hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: hps: "soc_system_passthrough" instantiated altera_hps "hps"
+Info: jtag_master: "soc_system_passthrough" instantiated altera_jtag_avalon_master "jtag_master"
+Info: system_id: "soc_system_passthrough" instantiated altera_avalon_sysid_qsys "system_id"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "soc_system_passthrough" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "soc_system_passthrough" instantiated altera_reset_controller "rst_controller"
+Info: ad1939_audio_mini: "ad1939_subsystem" instantiated ad1939_audio_mini "ad1939_audio_mini"
+Info: sys_clk_from_AD1939_MCLK_pll: "ad1939_subsystem" instantiated altera_pll "sys_clk_from_AD1939_MCLK_pll"
+Info: fpga_interfaces: "hps" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps" instantiated altera_hps_io "hps_io"
+Info: jtag_phy_embedded_in_jtag_master: "jtag_master" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "jtag_master" instantiated timing_adapter "timing_adt"
+Info: fifo: "jtag_master" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "jtag_master" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "jtag_master" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "jtag_master" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "jtag_master" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "jtag_master" instantiated channel_adapter "p2b_adapter"
+Info: jtag_master_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "jtag_master_master_translator"
+Info: Pitch_Shift_0_avalon_mm_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "Pitch_Shift_0_avalon_mm_translator"
+Info: hps_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_h2f_lw_axi_master_agent"
+Info: jtag_master_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "jtag_master_master_agent"
+Info: Pitch_Shift_0_avalon_mm_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "Pitch_Shift_0_avalon_mm_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: hps_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_h2f_lw_axi_master_wr_limiter"
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: Pitch_Shift_0_avalon_mm_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "Pitch_Shift_0_avalon_mm_burst_adapter"
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_avalon_st_clock_crosser.v
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: Reusing file C:/Users/Ronnel/OneDrive - Montana State University/MSU-Bozeman/Classes/Spring 2022/EELE 468/Final_Proj/pitchshiftQuartus/soc_system_passthrough/synthesis/submodules/altera_std_synchronizer_nocut.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: soc_system_passthrough: Done "soc_system_passthrough" with 46 modules, 124 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

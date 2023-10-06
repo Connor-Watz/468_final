@@ -1,0 +1,3 @@
+pitchShift/pitchShift/DualPortRAM_generic --> DualPortRAM_generic
+pitchShift_tc --> pitchShift_tc
+pitchShift/pitchShift --> pitchShift

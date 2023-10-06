@@ -1,0 +1,182 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 400 384)
+	(text "ad1939_subsystem" (rect 145 -1 222 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 368 20 380)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "ad1939_physical_asdata2" (rect 0 0 101 12)(font "Arial" (font_size 8)))
+		(text "ad1939_physical_asdata2" (rect 4 61 142 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 160 72)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "ad1939_physical_abclk_clk" (rect 0 0 107 12)(font "Arial" (font_size 8)))
+		(text "ad1939_physical_abclk_clk" (rect 4 149 154 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 160 160)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "ad1939_physical_alrclk_clk" (rect 0 0 107 12)(font "Arial" (font_size 8)))
+		(text "ad1939_physical_alrclk_clk" (rect 4 189 160 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 160 200)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "ad1939_physical_mclk_clk" (rect 0 0 106 12)(font "Arial" (font_size 8)))
+		(text "ad1939_physical_mclk_clk" (rect 4 229 148 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 160 240)(line_width 1))
+	)
+	(port
+		(pt 0 280)
+		(input)
+		(text "subsystem_reset_reset" (rect 0 0 96 12)(font "Arial" (font_size 8)))
+		(text "subsystem_reset_reset" (rect 4 269 130 280)(font "Arial" (font_size 8)))
+		(line (pt 0 280)(pt 160 280)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "to_headphone_out_data[23..0]" (rect 0 0 120 12)(font "Arial" (font_size 8)))
+		(text "to_headphone_out_data[23..0]" (rect 4 309 172 320)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 160 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "to_headphone_out_channel" (rect 0 0 108 12)(font "Arial" (font_size 8)))
+		(text "to_headphone_out_channel" (rect 4 325 148 336)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 160 336)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "to_headphone_out_valid" (rect 0 0 96 12)(font "Arial" (font_size 8)))
+		(text "to_headphone_out_valid" (rect 4 341 136 352)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 160 352)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(output)
+		(text "ad1939_physical_dsdata1" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "ad1939_physical_dsdata1" (rect 4 77 142 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 160 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(output)
+		(text "ad1939_physical_dbclk" (rect 0 0 90 12)(font "Arial" (font_size 8)))
+		(text "ad1939_physical_dbclk" (rect 4 93 130 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 160 104)(line_width 1))
+	)
+	(port
+		(pt 0 120)
+		(output)
+		(text "ad1939_physical_dlrclk" (rect 0 0 90 12)(font "Arial" (font_size 8)))
+		(text "ad1939_physical_dlrclk" (rect 4 109 136 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 160 120)(line_width 1))
+	)
+	(port
+		(pt 400 72)
+		(output)
+		(text "audio_fabric_system_clk_clk" (rect 0 0 118 12)(font "Arial" (font_size 8)))
+		(text "audio_fabric_system_clk_clk" (rect 254 61 416 72)(font "Arial" (font_size 8)))
+		(line (pt 400 72)(pt 240 72)(line_width 1))
+	)
+	(port
+		(pt 400 112)
+		(output)
+		(text "from_line_in_data[23..0]" (rect 0 0 96 12)(font "Arial" (font_size 8)))
+		(text "from_line_in_data[23..0]" (rect 279 101 423 112)(font "Arial" (font_size 8)))
+		(line (pt 400 112)(pt 240 112)(line_width 3))
+	)
+	(port
+		(pt 400 128)
+		(output)
+		(text "from_line_in_channel" (rect 0 0 84 12)(font "Arial" (font_size 8)))
+		(text "from_line_in_channel" (rect 292 117 412 128)(font "Arial" (font_size 8)))
+		(line (pt 400 128)(pt 240 128)(line_width 1))
+	)
+	(port
+		(pt 400 144)
+		(output)
+		(text "from_line_in_valid" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "from_line_in_valid" (rect 308 133 416 144)(font "Arial" (font_size 8)))
+		(line (pt 400 144)(pt 240 144)(line_width 1))
+	)
+	(drawing
+		(text "ad1939_physical" (rect 67 43 224 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "asdata2" (rect 165 67 372 144)(font "Arial" (color 0 0 0)))
+		(text "dsdata1" (rect 165 83 372 176)(font "Arial" (color 0 0 0)))
+		(text "dbclk" (rect 165 99 360 208)(font "Arial" (color 0 0 0)))
+		(text "dlrclk" (rect 165 115 366 240)(font "Arial" (color 0 0 0)))
+		(text "ad1939_physical_abclk" (rect 29 131 184 275)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 165 155 348 320)(font "Arial" (color 0 0 0)))
+		(text "ad1939_physical_alrclk" (rect 28 171 188 355)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 165 195 348 400)(font "Arial" (color 0 0 0)))
+		(text "ad1939_physical_mclk" (rect 32 211 184 435)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 165 235 348 480)(font "Arial" (color 0 0 0)))
+		(text "audio_fabric_system_clk" (rect 241 43 620 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 225 67 468 144)(font "Arial" (color 0 0 0)))
+		(text "from_line_in" (rect 241 83 554 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 219 107 462 224)(font "Arial" (color 0 0 0)))
+		(text "channel" (rect 205 123 452 256)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 217 139 464 288)(font "Arial" (color 0 0 0)))
+		(text "subsystem_reset" (rect 60 251 210 515)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 165 275 360 560)(font "Arial" (color 0 0 0)))
+		(text "to_headphone_out" (rect 53 291 202 595)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 165 315 354 640)(font "Arial" (color 0 0 0)))
+		(text "channel" (rect 165 331 372 672)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 165 347 360 704)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 365 368 778 746)(font "Arial" ))
+		(line (pt 160 32)(pt 240 32)(line_width 1))
+		(line (pt 240 32)(pt 240 368)(line_width 1))
+		(line (pt 160 368)(pt 240 368)(line_width 1))
+		(line (pt 160 32)(pt 160 368)(line_width 1))
+		(line (pt 161 52)(pt 161 124)(line_width 1))
+		(line (pt 162 52)(pt 162 124)(line_width 1))
+		(line (pt 161 140)(pt 161 164)(line_width 1))
+		(line (pt 162 140)(pt 162 164)(line_width 1))
+		(line (pt 161 180)(pt 161 204)(line_width 1))
+		(line (pt 162 180)(pt 162 204)(line_width 1))
+		(line (pt 161 220)(pt 161 244)(line_width 1))
+		(line (pt 162 220)(pt 162 244)(line_width 1))
+		(line (pt 239 52)(pt 239 76)(line_width 1))
+		(line (pt 238 52)(pt 238 76)(line_width 1))
+		(line (pt 239 92)(pt 239 148)(line_width 1))
+		(line (pt 238 92)(pt 238 148)(line_width 1))
+		(line (pt 161 260)(pt 161 284)(line_width 1))
+		(line (pt 162 260)(pt 162 284)(line_width 1))
+		(line (pt 161 300)(pt 161 356)(line_width 1))
+		(line (pt 162 300)(pt 162 356)(line_width 1))
+		(line (pt 0 0)(pt 400 0)(line_width 1))
+		(line (pt 400 0)(pt 400 384)(line_width 1))
+		(line (pt 0 384)(pt 400 384)(line_width 1))
+		(line (pt 0 0)(pt 0 384)(line_width 1))
+	)
+)

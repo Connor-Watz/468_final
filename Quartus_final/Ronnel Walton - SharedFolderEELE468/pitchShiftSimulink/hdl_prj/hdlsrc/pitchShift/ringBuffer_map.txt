@@ -1,0 +1,6 @@
+majorChangeShift/ringBuffer/modimpl_ntwk --> modimpl_ntwk
+majorChangeShift/ringBuffer/modimpl_ntwk --> modimpl_ntwk_block
+majorChangeShift/ringBuffer/modimpl_ntwk --> modimpl_ntwk_block1
+majorChangeShift/ringBuffer/DualPortRAM_generic --> DualPortRAM_generic
+ringBuffer_tc --> ringBuffer_tc
+majorChangeShift/ringBuffer --> ringBuffer

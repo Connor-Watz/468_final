@@ -1,0 +1,23 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst ad1939_subsystem.sys_clk_from_AD1939_MCLK_pll -pg 1 -lvl 2 -y 170
+preplace inst ad1939_subsystem.AD1939_Audio_Mini -pg 1 -lvl 3 -y 50
+preplace inst ad1939_subsystem.Reset -pg 1 -lvl 1 -y 250
+preplace inst ad1939_subsystem -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst ad1939_subsystem.System_Clock -pg 1 -lvl 3 -y 190
+preplace inst ad1939_subsystem.AD1939_ABCLK -pg 1 -lvl 2 -y 30
+preplace inst ad1939_subsystem.AD1939_ALRCLK -pg 1 -lvl 2 -y 70
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(SLAVE)ad1939_subsystem.ad1939_physical,(SLAVE)AD1939_Audio_Mini.connect_to_AD1939) 1 0 3 NJ 120 NJ 120 NJ
+preplace netloc FAN_OUT<net_container>ad1939_subsystem</net_container>(MASTER)Reset.out_reset,(SLAVE)sys_clk_from_AD1939_MCLK_pll.reset,(SLAVE)AD1939_Audio_Mini.sys_reset) 1 1 2 330 160 570
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(SLAVE)ad1939_subsystem.ad1939_physical_mclk,(SLAVE)sys_clk_from_AD1939_MCLK_pll.refclk) 1 0 2 NJ 180 NJ
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(SLAVE)ad1939_subsystem.ad1939_physical_abclk,(SLAVE)AD1939_ABCLK.in_clk) 1 0 2 NJ 40 NJ
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(MASTER)ad1939_subsystem.audio_fabric_system_clk,(MASTER)System_Clock.out_clk) 1 3 1 NJ
+preplace netloc FAN_OUT<net_container>ad1939_subsystem</net_container>(MASTER)sys_clk_from_AD1939_MCLK_pll.outclk0,(SLAVE)System_Clock.in_clk,(SLAVE)AD1939_Audio_Mini.sys_clk,(SLAVE)Reset.clk) 1 0 3 180 240 NJ 240 550
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(MASTER)ad1939_subsystem.from_line_in,(MASTER)AD1939_Audio_Mini.from_line_in) 1 3 1 NJ
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(SLAVE)ad1939_subsystem.subsystem_reset,(SLAVE)Reset.in_reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>ad1939_subsystem</net_container>(MASTER)AD1939_ABCLK.out_clk,(SLAVE)AD1939_Audio_Mini.clk_abclk) 1 2 1 NJ
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(SLAVE)ad1939_subsystem.to_headphone_out,(SLAVE)AD1939_Audio_Mini.to_headphone_out) 1 0 3 NJ 140 NJ 140 NJ
+preplace netloc EXPORT<net_container>ad1939_subsystem</net_container>(SLAVE)AD1939_ALRCLK.in_clk,(SLAVE)ad1939_subsystem.ad1939_physical_alrclk) 1 0 2 NJ 80 NJ
+preplace netloc POINT_TO_POINT<net_container>ad1939_subsystem</net_container>(SLAVE)AD1939_Audio_Mini.clk_alrclk,(MASTER)AD1939_ALRCLK.out_clk) 1 2 1 NJ
+levelinfo -pg 1 0 150 990
+levelinfo -hier ad1939_subsystem 160 210 380 600 820
